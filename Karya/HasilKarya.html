@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Presma Project</title>
+
+  <!-- inih fontnya kink -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwindnya kink yang cnd -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- cssnya -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen font-[Orbitron] bg-black text-white">
+
+ <!-- Navbar -->
+<header class="bg-gradient-to-r from-purple-900 via-blue-900 to-cyan-900 p-4 retro-border">
+  <div class="w-full px-2 max-w-5xl mx-auto flex items-center justify-between">
+    <!-- Logo ama Title -->
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="Presma Logo" class="w-10 h-10 rounded-full retro-glow">
+      <h1 class="text-2xl font-bold retro-text-glow">PRESMA PROJECT</h1>
+    </div>
+
+    
+  </div>
+</header>
+
+  <!-- Isi Pagenya -->
+  <main class="p-6 space-y-8 max-w-4xl mx-auto">
+  
+  <!-- Contoh Satu Cardnyah --> 
+  <!-- Glitch overlay -->
+  <div id="glitchOverlay" class="glitch-overlay hidden"></div>
+
+  <!-- Kartu Utama -->
+  <div class="retro-border rounded-lg p-4 bg-gradient-to-br from-gray-900 to-black">
+    <div class="flex space-x-4">
+      <div class="w-20 h-20 sphere-frame rounded-full p-1 flex-shrink-0 pulse-animation">
+        <img src="jammer.png" alt="Cyber Nexus" class="w-full h-full object-cover rounded-full retro-glow">
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center space-x-2 mb-1">
+          <h2 class="text-lg font-bold text-cyan-400">Jammer</h2>
+          <div class="w-2 h-2 bg-green-400 rounded-full status-online"></div>
+          <span class="text-xs text-green-400 code-font">ONLINE</span>
+        </div>
+        <div class="text-xs text-gray-400 code-font mb-2">
+          > ✅ Wi-Fi Jamming / Interferensi 2.4GHz | STATUS: ACTIVE | POWER: 86.5%
+        </div>
+        <div class="w-full bg-gray-800 rounded-full h-1 mb-3">
+          <div class="progress-bar h-1 rounded-full" style="--progress-width: 86%"></div>
+        </div>
+        <button id="decryptButton" class="retro-button text-xs px-3 py-1 rounded-full text-black font-bold" data-target="jammer.html">
+          ▼ DECRYPT DATA
+        </button>
+      </div>
+    </div>
+  </div>
+<!-- sekarang card kedua -->
+     <div class="retro-border rounded-lg p-4 bg-gradient-to-br from-gray-900 to-black">
+      <div class="flex space-x-4">
+        <div class="w-20 h-20 sphere-frame rounded-full p-1 flex-shrink-0 pulse-animation">
+          <img src="presma.png" alt="Cyber Nexus" class="w-full h-full object-cover rounded-full retro-glow">
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center space-x-2 mb-1">
+            <h2 class="text-lg font-bold text-cyan-400">Presma Tour</h2>
+            <div class="w-2 h-2 bg-green-400 rounded-full status-online"></div>
+            <span class="text-xs text-green-400 code-font">ONLINE</span>
+          </div>
+          <div class="text-xs text-gray-400 code-font mb-2">
+            > ✅ Prestasi Prima Simulator
+ | STATUS: ACTIVE | POWER: 90.3%
+          </div>
+          <div class="w-full bg-gray-800 rounded-full h-1 mb-3">
+            <div class="progress-bar h-1 rounded-full" style="--progress-width: 90%"></div>
+          </div>
+          <button onclick="toggleDescription" class="retro-button text-xs px-3 py-1 rounded-full text-black font-bold" data-target="presim.html">
+            ▼ DECRYPT DATA
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- sekarang card ketiga -->
+     <div class="retro-border rounded-lg p-4 bg-gradient-to-br from-gray-900 to-black">
+      <div class="flex space-x-4">
+        <div class="w-20 h-20 sphere-frame rounded-full p-1 flex-shrink-0 pulse-animation">
+          <img src="presma.png" alt="Cyber Nexus" class="w-full h-full object-cover rounded-full retro-glow">
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center space-x-2 mb-1">
+            <h2 class="text-lg font-bold text-cyan-400">Jammer</h2>
+            <div class="w-2 h-2 bg-green-400 rounded-full status-online"></div>
+            <span class="text-xs text-green-400 code-font">ONLINE</span>
+          </div>
+          <div class="text-xs text-gray-400 code-font mb-2">
+            > ✅ Wi-Fi Jamming / Interferensi 2.4GHz
+ | STATUS: ACTIVE | POWER: 88.9%
+          </div>
+          <div class="w-full bg-gray-800 rounded-full h-1 mb-3">
+            <div class="progress-bar h-1 rounded-full" style="--progress-width: 88%"></div>
+          </div>
+          <button onclick="toggleDescription" class="retro-button text-xs px-3 py-1 rounded-full text-black font-bold" data-deny="true">
+            ▼ DECRYPT DATA
+          </button>
+        </div>
+      </div>
+    </div>  
+    <!--card 4 hiasan-->
+        <div class="retro-border rounded-lg p-4 bg-gradient-to-br from-gray-900 to-black">
+      <div class="flex space-x-4">
+        <div class="w-20 h-20 sphere-frame rounded-full p-1 flex-shrink-0 pulse-animation">
+          <img src="gtw.png" alt="Cyber Nexus" class="w-full h-full object-cover rounded-full retro-glow">
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center space-x-2 mb-1">
+            <h2 class="text-lg font-bold text-cyan-400">Jammer</h2>
+            <div class="w-2 h-2 bg-red-400 rounded-full status-offline"></div>
+            <span class="text-xs text-red-400 code-font">OFFLINE</span>
+          </div>
+          <div class="text-xs text-gray-400 code-font mb-2">
+            > ❎ Wi-Fi Jamming / Interferensi 2.4GHz
+ | STATUS: DEACTIVE | POWER: 46.9%
+          </div>
+          <div class="w-full bg-gray-800 rounded-full h-1 mb-3">
+            <div class="progress-bar h-1 rounded-full" style="--progress-width: 46%"></div>
+          </div>
+          <button onclick="toggleDescription" class="retro-button text-xs px-3 py-1 rounded-full text-black font-bold" data-deny="true">
+            ▼ DECRYPT DATA
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--data denied-->
+    <div id="glitchOverlay" class="glitch-overlay hidden"></div>
+<div id="accessDenied" class="access-denied hidden">ACCESS DENIED</div>
+    <!-- Tambah lagi: Plasma Core, Sonic Matrix -->
+  </main>
+
+  <!-- Page Infonya kek footer  -->
+  <footer class="mt-12 p-6 text-left text-xs text-gray-500 code-font border-t border-cyan-500/20">
+    <div class="max-w-5xl mx-auto space-y-1">
+      <p>&gt; PRESMA_PROJECT © 2025 | MPLS-TECH_INNOVATIONS.exe</p>
+      <p class="text-cyan-400">&gt; 4_CREATIONS_LOADED | STATUS: OPERATIONAL</p>
+    </div>
+  </footer>
+
+  <!-- Scriptnya kink -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Jazman,Bintang,Gibran,Zwingli-->
