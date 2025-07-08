@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-orange-500 text-white p-4 fixed top-0 w-full z-10 shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index2.php" class="font-bold hover:underline"
+          >&larr; Kembali ke Home</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-2 px-6 text-center" id="tentang">
+      <h2 class="text-4xl font-extrabold text-orange-500 mb-3">
+        Kenapa Harus Gabung ORENS?
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
+        Karena Orens Solution adalah tempat belajar ngoding bareng teman, dari
+        yang nol sampai jadi pengoding handal! Ekskul ini terbuka untuk semua
+        siswa yang ingin mengembangkan diri di industri teknologi.
+      </p>
+    </section>
+
+    <!-- Divisi Section -->
+    <section class="px-6 py-12 bg-gray-50">
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Divisi Cyber -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h3
+            class="inline-block px-5 py-2 bg-orange-100 text-orange-600 font-bold rounded-full text-lg transition duration-300 hover:bg-orange-500 hover:text-white shadow-sm"
+          >
+            Divisi Cyber
+          </h3>
+          <img
+            src="Logo_Cyber.jpg"
+            alt="Logo_Cyber"
+            class="w-24 h-24 rounded-full object-cover shadow"
+          />
+          <p class="text-center text-gray-700">
+            Fokus di CTF (Capture The Flag) dan ethical hacking.
+          </p>
+          <button
+            onclick="showDetail('cyber-detail')"
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-500 transition"
+          >
+            Pelajari Selengkapnya
+          </button>
+        </div>
+
+        <!-- Divisi Game -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <h3
+            class="inline-block px-5 py-2 bg-orange-100 text-orange-600 font-bold rounded-full text-lg transition duration-300 hover:bg-orange-500 hover:text-white shadow-sm"
+          >
+            Divisi Game
+          </h3>
+          <img
+            src="Logo_Game.jpg"
+            alt="Logo_Game"
+            class="w-24 h-24 rounded-full object-cover shadow"
+          />
+          <p class="text-center text-gray-700">
+            Mempelajari pembuatan game dari dasar menggunakan Roblox dan Unity.
+          </p>
+          <button
+            onclick="showDetail('game-detail')"
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-400 transition"
+          >
+            Pelajari Selengkapnya
+          </button>
+        </div>
+
+        <!-- Divisi Web -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <h3
+            class="inline-block px-5 py-2 bg-orange-100 text-orange-600 font-bold rounded-full text-lg transition duration-300 hover:bg-orange-500 hover:text-white shadow-sm"
+          >
+            Divisi Web
+          </h3>
+          <img
+            src="Logo_Website.jpg"
+            alt="Logo_Web"
+            class="w-24 h-24 rounded-full object-cover shadow"
+          />
+          <p class="text-center text-gray-700">
+            Belajar bikin website interaktif pakai HTML, CSS, JS, dan PHP.
+          </p>
+          <button
+            onclick="showDetail('web-detail')"
+            class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-500 transition"
+          >
+            Pelajari Selengkapnya
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Section (Hidden by default) -->
+    <section class="px-6 py-6 bg-white space-y-4">
+      <div
+        id="cyber-detail"
+        class="hidden max-w-4xl mx-auto p-4 rounded-lg shadow-inner bg-orange-50"
+      >
+        <h4 class="text-lg font-bold text-orange-500 mb-2">
+          Detail Divisi Cyber
+        </h4>
+        <p class="text-gray-700">
+          Di divisi ini, kamu akan belajar tentang tools Kali Linux, dasar-dasar
+          bahasa pemrograman python, hingga latihan mencari flag di PicoCTF.
+        </p>
+      </div>
+      <div
+        id="game-detail"
+        class="hidden max-w-4xl mx-auto p-4 rounded-lg shadow-inner bg-orange-50"
+      >
+        <h4 class="text-lg font-bold text-orange-500 mb-2">
+          Detail Divisi Game
+        </h4>
+        <p class="text-gray-700">
+          Kalian akan dibimbing membuat game di Roblox Studio dan Unity, lebih
+          mempelajari Roblox Studio dan kita akan membuat game sederhana.
+        </p>
+      </div>
+      <div
+        id="web-detail"
+        class="hidden max-w-4xl mx-auto p-4 rounded-lg shadow-inner bg-orange-50"
+      >
+        <h4 class="text-lg font-bold text-orange-500 mb-2">
+          Detail Divisi Web
+        </h4>
+        <p class="text-gray-700">
+          Kamu akan belajar HTML, CSS, dan JavaScript untuk bikin website yang
+          menarik. Lanjut juga ke PHP serta Laravelnya.
+        </p>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      function showDetail(id) {
+        // Sembunyikan semua detail
+        document
+          .querySelectorAll("#cyber-detail, #game-detail, #web-detail")
+          .forEach((div) => {
+            div.classList.add("hidden");
+          });
+
+        // Tampilkan div yang diklik
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.remove("hidden");
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    </script>
+
+    <!-- Testimoni Section -->
+    <section class="bg-gray-50 py-8 px-6">
+      <h3 class="text-3xl font-bold text-center text-orange-500 mb-4">
+        Testimoni Siswa yang ikut Orens
+      </h3>
+      <div
+        class="text-center text-sm italic max-w-xl mx-auto pt-5 text-gray-600"
+      >
+        "Aku ikut ORENS dan ngerasa belajar website itu seru banget.
+        Kakak-kakaknya juga ngajarin!" - Kelas 10 PPLG 1
+      </div>
+    </section>
+
+    <!-- Visi Misi -->
+    <section class="px-6 py-12">
+      <h3 class="text-xl font-bold text-center text-orange-500 mb-4">
+        Visi dan Misi ORENS SOLUTION
+      </h3>
+      <div class="max-w-3xl mx-auto text-gray-700 text-center space-y-2">
+        <p>
+          <strong>Visi:</strong> Menjadi ekskul terbaik yang membentuk siswa
+          kreatif dan kritis.
+        </p>
+        <p>
+          <strong>Misi:</strong> Mempelajari coding yang menyenangkan, membuat
+          projek kecil-kecilan, dan menciptakan komunitas belajar yang suportif.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-6 py-8 max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold text-orange-500 mb-4 text-center">
+        Pertanyaan yang sering ditanya??
+      </h3>
+      <div class="space-y-3 text-sm text-gray-700">
+        <details class="bg-gray-100 p-4 rounded">
+          <summary class="font-semibold cursor-pointer">
+            Apakah gua harus jago ngoding dulu?
+          </summary>
+          <p class="mt-2">
+            Gak perlu jago, Kita belajar bareng dari dasar. Yang penting punya
+            semangat dan rasa ingin tahu.
+          </p>
+        </details>
+        <details class="bg-gray-100 p-4 rounded">
+          <summary class="font-semibold cursor-pointer">
+            Apa saja kegiatan ORENS?
+          </summary>
+          <p class="mt-2">
+            Kita belajar bareng, bikin proyek, ikut lomba, dan juga sharing
+            kepada sesama.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- quiz -->
+    <div
+      class="mt-10 mb-12 p-8 bg-orange-100 rounded-xl shadow-md max-w-xl mx-auto"
+    >
+      <h2 class="text-2xl font-extrabold text-orange-600 mb-4 text-center">
+        Kuis: Cocoknya Kamu Masuk Divisi Mana?
+      </h2>
+      <p class="text-gray-800 mt-6 mb-6 text-center text-sm italic font-bold">
+        "Ini hanya kuis biasa ya, jadi bukan penentu kalian masuk divisi mana
+        ya."
+      </p>
+      <form id="quizForm" class="space-y-4">
+        <div>
+          <p class="font-semibold">1. Kamu paling tertarik sama apa?</p>
+          <label
+            ><input type="radio" name="q1" value="cyber" /> Hacking & keamanan
+            sistem</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="game" /> Bikin game dan
+            karakter</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="web" /> Desain dan bikin
+            website</label
+          >
+        </div>
+
+        <div>
+          <p class="font-semibold">2. Aktivitas favorit kamu?</p>
+          <label
+            ><input type="radio" name="q2" value="game" /> Main Roblox atau
+            Unity</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="cyber" /> Nyoba ngulik CTF
+            (Capture The Flag)</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="web" /> Buat tampilan web &
+            UI</label
+          >
+        </div>
+
+        <div>
+          <p class="font-semibold">3. Kamu lebih suka kerja...</p>
+          <label
+            ><input type="radio" name="q3" value="web" /> Dengan tampilan
+            visual</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="cyber" /> Di balik layar &
+            command line</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="game" /> Ngatur logic game &
+            animasi</label
+          >
+        </div>
+
+        <button
+          type="submit"
+          class="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition"
+        >
+          Lihat Hasil
+        </button>
+      </form>
+
+      <div
+        id="quizResult"
+        class="mt-6 text-xl font-bold text-center text-orange-700"
+      ></div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="bg-orange-500 text-white text-center py-8 px-4">
+      <p class="mt-2 text-lg">
+        Klik tombol di bawah ini untuk bergabung dengan ORENS SOLUTION!
+      </p>
+      <button
+        id="joinBtn"
+        class="rounded-2xl bg-white text-orange-500 px-8 py-4 mt-6 mb-6 shadow-lg hover:bg-orange-100 transition transform active:scale-95 w-full max-w-sm mx-auto text-lg font-semibold"
+      >
+        🚀 Siap Belajar Lebih Dalam?
+      </button>
+
+      <p class="mb-4 max-w-xl mx-auto">
+        ORENS selalu terbuka untuk siswa yang mau berkembang, belajar bareng,
+        dan eksplorasi dunia teknologi bareng teman-teman seru!
+      </p>
+      <p class="italic text-sm">
+        Hubungi pengurus ORENS langsung jika ingin tahu lebih lanjut atau
+        gabung.
+      </p>
+    </section>
+
+    <!-- Floating Bottom Nav (Mobile) -->
+    <div class="fixed bottom-4 right-4 flex gap-2 z-50 md:hidden">
+      <a
+        href="#cyber"
+        class="bg-orange-500 text-white p-3 rounded-full shadow hover:bg-orange-500"
+      >
+        <i class="fas fa-shield-alt"></i>
+      </a>
+      <a
+        href="#game"
+        class="bg-orange-500 text-white p-3 rounded-full shadow hover:bg-orange-500"
+      >
+        <i class="fas fa-gamepad"></i>
+      </a>
+      <a
+        href="#web"
+        class="bg-orange-500 text-white p-3 rounded-full shadow hover:bg-orange-500"
+      >
+        <i class="fas fa-code"></i>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm py-6 text-gray-500">
+      &copy; 2025 ORENS SOLUTION. All rights reserved.
+    </footer>
+
+    <!-- buat animasi  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- buat quiz -->
+    <script>
+      document
+        .getElementById("quizForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const form = new FormData(this);
+          const scores = { cyber: 0, game: 0, web: 0 };
+
+          for (let [key, value] of form.entries()) {
+            scores[value]++;
+          }
+
+          // cari nilai tertinggi
+          let max = 0;
+          let result = "";
+          for (let div in scores) {
+            if (scores[div] > max) {
+              max = scores[div];
+              result = div;
+            }
+          }
+
+          let message = {
+            cyber: "Kamu cocok gabung Divisi Cyber! 🔐",
+            game: "Kamu cocok gabung Divisi Game! 🎮",
+            web: "Kamu cocok gabung Divisi Web! 💻",
+          };
+
+          document.getElementById("quizResult").innerText =
+            message[result] || "Isi semua pertanyaannya ya!";
+        });
+    </script>
+
+    <!-- buat hubungi -->
+    <script>
+      document.getElementById("joinBtn").addEventListener("click", function () {
+        confetti({
+          particleCount: 150,
+          spread: 70,
+          origin: { y: 0.6 },
+        });
+      });
+    </script>
+
+    <!-- buat hubungi -->
+    <script>
+      document.getElementById("joinBtn").addEventListener("click", function () {
+        // efek confetti confetti({ particleCount: 180, spread: 100, origin: { y:
+        0.6;
+      }); // scroll sedikit ke atas biar confetti keliatan
+      window.scrollBy({ top: -100, behavior: "smooth" }); // efek feedback
+      this.innerText = "🎉 Yuk, Ayo Mulai!";
+      setTimeout(() => {
+        this.innerText = "🚀 Siap Belajar Lebih Dalam?";
+      }, 2000);
+    </script>
+  </body>
+</html>

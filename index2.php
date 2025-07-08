@@ -41,7 +41,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
+          <a href="About Us.html" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
             <i class="bi bi-people mr-3"></i>
             <span class="menu-label opacity-0 -translate-x-4 transition-all duration-100 delay-50">About Us</span>
           </a>
