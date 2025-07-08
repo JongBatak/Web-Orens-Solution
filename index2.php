@@ -52,12 +52,6 @@
             <span class="menu-label opacity-0 -translate-x-4 transition-all duration-100 delay-50">Hasil Karya</span>
           </a>
         </li>
-        <li>
-          <a href="#" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
-            <i class="lni lni-home-2 mr-3"></i>
-            <span class="menu-label opacity-0 -translate-x-4 transition-all duration-100 delay-50">Home</span>
-          </a>
-        </li>
       </ul>
 
       <div class="mt-auto mb-4">
