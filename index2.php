@@ -35,7 +35,7 @@
 
       <ul class="flex-1 space-y-2 mt-2 text-sm">
         <li>
-          <a href="#" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
+          <a href="index2.php" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
             <i class="lni lni-home-2 mr-3"></i>
             <span class="menu-label opacity-0 -translate-x-4 transition-all duration-50">Home</span>
           </a>
@@ -68,6 +68,8 @@
       <img src="SMKPP.png" alt="Orens Solution Logo" class="block mx-auto max-w-[800px] w-full rounded-lg"/>
     </div>
   </div>
+  <footer class ="text-center text-gray-500 text-sm mt-6">
+    <p>&copy; 2025 Orens Solution. All rights reserved.</p>
 
   <!-- Script untuk toggle animasi dan label -->
   <script>
