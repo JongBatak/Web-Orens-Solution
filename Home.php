@@ -8,21 +8,21 @@
   <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
+
 <body class="overflow-x-hidden">
   <div class="flex min-h-screen">
 
-
-  <!-- Toggle button (hamburger) -->
   <label for="toggler" class="md:hidden fixed top-4 left-4 z-50 bg-orange-500 text-white p-2 rounded shadow">
     <i class="bi bi-list text-2xl"></i>
   </label>
-
   <!-- The hidden checkbox trigger -->
   <input type="checkbox" id="toggler" class="peer hidden">
 
@@ -81,49 +81,49 @@
   class="transition-all duration-300 flex-1 min-h-screen p-6 flex flex-col items-center justify-start">
 
   <!-- Konten utama -->
-  <h2 class="text-center text-2xl font-semibold mb-6">Welcome to Orens Solution</h2>
+  <h2 data-aos="fade-down" class="text-center text-2xl font-semibold mb-6">Welcome to Orens Solution</h2>
 
-  <img src="Lab RPL.jpg" alt="Orens Solution Logo" class="block mx-auto max-w-[800px] w-full rounded-lg"/>
+  <img data-aos="fade-down" src="Lab RPL.jpg" alt="Orens Solution Logo" class="block mx-auto max-w-[800px] w-full rounded-lg"/>
 
   <div class="text-center mt-8">
-    <h2 class="text-2xl md:text-3xl font-semibold">Welcome to Orens Solution</h2>
-    <p class="text-lg text-gray-600 mt-2">Mencetak Generasi Unggul dan Berkarakter</p>
-    <p class="max-w-2xl mx-auto mt-4 text-gray-700">
+    <h2 data-aos="fade-down" class="text-2xl md:text-3xl font-semibold">Welcome to Orens Solution</h2>
+    <p data-aos="fade-down" class="text-lg text-gray-600 mt-2">Mencetak Generasi Unggul dan Berkarakter</p>
+    <p data-aos="fade-down" class="max-w-2xl mx-auto mt-4 text-gray-700">
       Orens Solution adalah portal resmi dari SMK Prestasi Prima yang memuat berbagai informasi penting seperti hasil karya siswa, kegiatan sekolah, dan struktur organisasi. Website ini bertujuan untuk memperkenalkan potensi siswa secara luas dan sebagai media informasi internal maupun eksternal.
     </p>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 text-center max-w-5xl mx-auto">
     <div>
-      <i class="lni lni-calendar text-4xl text-blue-500 mb-2"></i>
-      <h3 class="font-semibold text-lg">Agenda & Kegiatan</h3>
-      <p class="text-gray-600">Beragam kegiatan dan acara menarik siswa kami.</p>
+      <i data-aos="fade-down" class="lni lni-calendar text-4xl text-blue-500 mb-2"></i>
+      <h3 data-aos="fade-down" class="font-semibold text-lg">Agenda & Kegiatan</h3>
+      <p  data-aos="fade-down" class="text-gray-600">Beragam kegiatan dan acara menarik siswa kami.</p>
     </div>
     <div>
-      <i class="lni lni-network text-4xl text-orange-500 mb-2"></i>
-      <h3 class="font-semibold text-lg">Struktur Organisasi</h3>
-      <p class="text-gray-600">Struktur lengkap organisasi Orens Solution.</p>
+      <i data-aos="fade-down" class="lni lni-network text-4xl text-orange-500 mb-2"></i>
+      <h3 data-aos="fade-down" class="font-semibold text-lg">Struktur Organisasi</h3>
+      <p data-aos="fade-down" class="text-gray-600">Struktur lengkap organisasi Orens Solution.</p>
     </div>
   </div>
 
   <div class="flex justify-center mt-8">
-    <a href="/Contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded shadow">Hubungi Kami</a>
+    <a data-aos="flip-left" href="/Contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded shadow">Hubungi Kami</a>
   </div>
 
   <!-- Struktur Organisasi -->
   <div class="mt-16 px-4 md:px-20 text-center">
-    <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Struktur Organisasi Orens Solution</h2>
+    <h2 data-aos="fade-down" class="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Struktur Organisasi Orens Solution</h2>
 
   <!-- Ketua -->
   <div class="mb-10 flex justify-center">
-    <div class="w-52 rounded shadow overflow-hidden">
+    <div data-aos="flip-up" class="w-52 rounded shadow overflow-hidden">
       <div class="bg-orange-500 text-white py-2 font-semibold">Ketua Orens Solution</div>
       <div class="bg-white text-orange-500 py-2 font-medium">Zwingli Savanarola</div>
     </div>
   </div>
 
   <!-- Wakil, Sekum, SekPJBL -->
-  <div class="mb-10 flex flex-wrap justify-center gap-6">
+  <div data-aos="flip-up" class="mb-10 flex flex-wrap justify-center gap-6">
     <div class="w-52 rounded shadow overflow-hidden">
       <div class="bg-blue-500 text-white py-2 font-semibold">Ketua PJBL (Wakil)</div>
       <div class="bg-white text-blue-500 py-2 font-medium">Rizky Putra</div>
@@ -139,7 +139,7 @@
   </div>
 
   <!-- Kadiv -->
-  <div class="mb-8 flex flex-wrap justify-center gap-8">
+  <div data-aos="flip-up" class="mb-8 flex flex-wrap justify-center gap-8">
     <!-- Kadiv Cyber -->
     <div>
       <div class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
@@ -204,40 +204,71 @@
     </div>
   </div>
 </main>
-
-  <!-- Script -->
+  <!-- Script untuk toggle animasi dan label -->
   <script>
-    const toggler = document.getElementById('toggler');
-    const overlay = document.getElementById('overlay');
-    const labels = document.querySelectorAll('.menu-label');
-    const brandOrens = document.getElementById('brand-orens');
-    const brandSolution = document.getElementById('brand-solution');
+  const toggler = document.getElementById('toggler');
+  const overlay = document.getElementById('overlay');
+  const sidebar = document.getElementById('sidebar');
+  const mainContent = document.getElementById('main-content');
 
-    toggler.addEventListener('change', () => {
-      if (toggler.checked) {
-        overlay.classList.remove('hidden');
-        brandOrens.classList.replace('opacity-0', 'opacity-100');
-        brandOrens.classList.replace('-translate-x-4', 'translate-x-0');
-        brandSolution.classList.replace('opacity-0', 'opacity-100');
-        brandSolution.classList.replace('-translate-x-4', 'translate-x-0');
-        labels.forEach(label => {
-          label.classList.replace('opacity-0', 'opacity-100');
-          label.classList.replace('-translate-x-4', 'translate-x-0');
-        });
-      } else {
-        overlay.classList.add('hidden');
-        brandOrens.classList.replace('opacity-100', 'opacity-0');
-        brandOrens.classList.replace('translate-x-0', '-translate-x-4');
-        brandSolution.classList.replace('opacity-100', 'opacity-0');
-        brandSolution.classList.replace('translate-x-0', '-translate-x-4');
-        labels.forEach(label => {
-          label.classList.replace('opacity-100', 'opacity-0');
-          label.classList.replace('translate-x-0', '-translate-x-4');
-        });
-      }
-    });
-  </script>
+  const labels = document.querySelectorAll('.menu-label');
+  const brandOrens = document.getElementById('brand-orens');
+  const brandSolution = document.getElementById('brand-solution');
+
+  toggler.addEventListener('change', () => {
+    if (toggler.checked) {
+      // OPEN STATE
+      overlay.classList.remove('hidden');
+
+      // Animate brand
+      brandOrens.classList.replace('opacity-0', 'opacity-100');
+      brandOrens.classList.replace('-translate-x-4', 'translate-x-0');
+      brandSolution.classList.replace('opacity-0', 'opacity-100');
+      brandSolution.classList.replace('-translate-x-4', 'translate-x-0');
+
+      // Animate labels
+      labels.forEach(label => {
+        label.classList.replace('opacity-0', 'opacity-100');
+        label.classList.replace('-translate-x-4', 'translate-x-0');
+      });
+
+      // Expand sidebar on desktop
+      sidebar.classList.remove('w-[85px]');
+      sidebar.classList.add('w-[260px]');
+      mainContent.classList.remove('md:ml-[85px]');
+      mainContent.classList.add('md:ml-[260px]');
+    } else {
+      // CLOSE STATE
+      overlay.classList.add('hidden');
+
+      // Animate brand
+      brandOrens.classList.replace('opacity-100', 'opacity-0');
+      brandOrens.classList.replace('translate-x-0', '-translate-x-4');
+      brandSolution.classList.replace('opacity-100', 'opacity-0');
+      brandSolution.classList.replace('translate-x-0', '-translate-x-4');
+
+      // Animate labels
+      labels.forEach(label => {
+        label.classList.replace('opacity-100', 'opacity-0');
+        label.classList.replace('translate-x-0', '-translate-x-4');
+      });
+
+      // Collapse sidebar on desktop
+      sidebar.classList.remove('w-[260px]');
+      sidebar.classList.add('w-[85px]');
+      mainContent.classList.remove('md:ml-[260px]');
+      mainContent.classList.add('md:ml-[85px]');
+    }
+  });
+</script>
   </div>
   <div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+</script>
 </body>
 </html>
