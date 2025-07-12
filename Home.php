@@ -10,11 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
     }
   </style>
+  
 </head>
 
 <body class="overflow-x-hidden">
@@ -55,11 +57,14 @@
         </a>
       </li>
       <li>
-        <a href="HasilKarya.html" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
-          <i class="bi bi-lightbulb mr-3"></i>
-          <span class="menu-label opacity-0 -translate-x-4 transition-all duration-300">Hasil Karya</span>
-        </a>
-      </li>
+      <button onclick="openPasswordModal()" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all w-full text-left">
+        <i class="bi bi-lightbulb mr-3"></i>
+        <span class="menu-label opacity-0 -translate-x-4 transition-all duration-300">Hasil Karya</span>
+      </button>
+    </li>
+
+    </li>
+
     </ul>
 
     <div class="mt-auto mb-4">
@@ -204,7 +209,39 @@
     </div>
   </div>
 </main>
-  <!-- Script untuk toggle animasi dan label -->
+
+
+<div id="glitchOverlay" class="glitch-overlay hidden"></div>
+<div id="accessGranted" class="access-granted hidden">ACCESS GRANTED</div>
+<div id="accessDenied" class="access-denied hidden">ACCESS DENIED</div>
+
+<div id="passwordModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden flex items-center justify-center">
+  <div class="modal-box bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center space-y-4 relative">
+
+    <button onclick="closePasswordModal()" class="absolute top-3 right-4 text-gray-500 hover:text-black text-2xl font-bold leading-none">
+      &times;
+    </button>
+
+    <div class="text-4xl text-yellow-500">❗</div>
+    <h2 class="text-xl font-bold text-black">Tolong Submit Password</h2>
+    <p class="text-gray-500 text-sm">Hint: passwordnya <strong>Orens Rock</strong></p>
+
+    <input
+      type="password"
+      id="passwordInput"
+      placeholder="Masukkan password..."
+      class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none text-black"
+    >
+    <button
+      onclick="submitPassword()"
+      class="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 text-black font-bold px-6 py-2 rounded-full shadow-lg hover:opacity-90 transition"
+    >
+      Submit
+    </button>
+
+  </div>
+</div>
+
   <script>
   const toggler = document.getElementById('toggler');
   const overlay = document.getElementById('overlay');
@@ -270,5 +307,69 @@
     once: true,
   });
 </script>
+<script>
+  function openPasswordModal() {
+    const modal = document.getElementById('passwordModal');
+    const box = modal?.querySelector('.modal-box'); 
+
+    if (modal && box) {
+      modal.classList.remove('hidden');
+
+
+      box.classList.remove('zoom-in'); 
+      void box.offsetWidth; 
+      box.classList.add('zoom-in');
+
+      document.getElementById('passwordInput').value = '';
+      document.getElementById('passwordInput').placeholder = 'Masukkan password...';
+    }
+  }
+
+  function submitPassword() {
+    const input = document.getElementById('passwordInput').value.trim();
+    const overlay = document.getElementById('glitchOverlay');
+    const granted = document.getElementById('accessGranted');
+    const denied = document.getElementById('accessDenied');
+    const modal = document.getElementById('passwordModal');
+
+    if (!overlay || !granted || !denied || !modal) return;
+
+    overlay.classList.remove('hidden');
+
+    setTimeout(() => {
+      overlay.classList.add('hidden');
+
+      if (input === 'Orens Rock') {
+        granted.classList.remove('hidden');
+
+        setTimeout(() => {
+          granted.classList.add('hidden');
+          modal.classList.add('hidden');
+          window.location.href = 'HasilKarya.html';
+        }, 1200);
+
+      } else {
+        denied.classList.remove('hidden');
+
+        setTimeout(() => {
+          denied.classList.add('hidden');
+          document.getElementById('passwordInput').value = '';
+          document.getElementById('passwordInput').placeholder = 'Password salah!';
+        }, 1500);
+      }
+
+    }, 600);
+  }
+
+  function closePasswordModal() {
+    const modal = document.getElementById('passwordModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.getElementById('passwordInput').value = '';
+      document.getElementById('passwordInput').placeholder = 'Masukkan password...';
+    }
+  }
+</script>
+
 </body>
 </html>
