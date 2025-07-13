@@ -25,10 +25,9 @@
   <label for="toggler" class="md:hidden fixed top-4 left-4 z-50 bg-orange-500 text-white p-2 rounded shadow">
     <i class="bi bi-list text-2xl"></i>
   </label>
-  <!-- The hidden checkbox trigger -->
+
   <input type="checkbox" id="toggler" class="peer hidden">
 
-  <!-- Sidebar -->
   <aside id="sidebar" class="
     fixed md:sticky top-0 left-0 h-screen bg-orange-500 z-50
     w-[85px] md:w-[85px]
@@ -62,39 +61,25 @@
         <span class="menu-label opacity-0 -translate-x-4 transition-all duration-300">Hasil Karya</span>
       </button>
     </li>
-
-    </li>
-
     </ul>
-
-    <div class="mt-auto mb-4">
-      <a href="#" class="flex items-center text-white px-6 py-2 hover:bg-orange-400 border-l-4 border-transparent hover:border-blue-500 transition-all">
-        <i class="lni lni-exit mr-3"></i>
-        <span class="menu-label opacity-0 -translate-x-4 transition-all duration-300">Logout</span>
-      </a>
-    </div>
   </aside>
 
-  <!-- Overlay -->
   <div id="overlay" class="
     fixed inset-0 bg-black bg-opacity-50 z-40 hidden
     peer-checked:block md:hidden
   "></div>
 
-  <!-- Main content -->
 <main id="main-content"
   class="transition-all duration-300 flex-1 min-h-screen p-6 flex flex-col items-center justify-start">
 
-  <!-- Konten utama -->
-  <h2 data-aos="fade-down" class="text-center text-2xl font-semibold mb-6">Welcome to Orens Solution</h2>
-
+  <h2 data-aos="fade-down" class="text-center text-white p-2y font-semibold mb-6">Easter Egg</h2>
   <img data-aos="fade-down" src="Lab RPL.jpg" alt="Orens Solution Logo" class="block mx-auto max-w-[800px] w-full rounded-lg"/>
 
   <div class="text-center mt-8">
     <h2 data-aos="fade-down" class="text-2xl md:text-3xl font-semibold">Welcome to Orens Solution</h2>
     <p data-aos="fade-down" class="text-lg text-gray-600 mt-2">Mencetak Generasi Unggul dan Berkarakter</p>
     <p data-aos="fade-down" class="max-w-2xl mx-auto mt-4 text-gray-700">
-      Orens Solution adalah portal resmi dari SMK Prestasi Prima yang memuat berbagai informasi penting seperti hasil karya siswa, kegiatan sekolah, dan struktur organisasi. Website ini bertujuan untuk memperkenalkan potensi siswa secara luas dan sebagai media informasi internal maupun eksternal.
+      Orens Solution adalah organisasi atau ekstrakurikuler resmi jurusan PPLG di SMK Prestasi Prima yang berfokus pada pengembangan website (HTML, CSS, JavaScript, PHP), cyber security (termasuk penggunaan Kali Linux), serta pembuatan game (menggunakan Roblox dan Unity). Website ini memuat informasi tentang hasil karya anggota, struktur organisasi, dan kegiatan belajar bersama untuk mendukung pengembangan skill programming siswa.
     </p>
   </div>
 
@@ -102,12 +87,12 @@
     <div>
       <i data-aos="fade-down" class="lni lni-calendar text-4xl text-blue-500 mb-2"></i>
       <h3 data-aos="fade-down" class="font-semibold text-lg">Agenda & Kegiatan</h3>
-      <p  data-aos="fade-down" class="text-gray-600">Beragam kegiatan dan acara menarik siswa kami.</p>
+      <p  data-aos="fade-down" class="text-gray-600">Kegiatan rutin Orens Solution meliputi ekstrakurikuler setiap Senin dan Kamis yang membahas topik menarik seperti Game Development, Cyber Security, dan Web Development. Selain itu, anggota juga terlibat aktif dalam event seperti Saintek Fair dan pameran teknologi lainnya.</p>
     </div>
     <div>
       <i data-aos="fade-down" class="lni lni-network text-4xl text-orange-500 mb-2"></i>
-      <h3 data-aos="fade-down" class="font-semibold text-lg">Struktur Organisasi</h3>
-      <p data-aos="fade-down" class="text-gray-600">Struktur lengkap organisasi Orens Solution.</p>
+      <h3 data-aos="fade-down" class="font-semibold text-lg">Ekskul & Kompetisi</h3>
+      <p data-aos="fade-down" class="text-gray-600">Kegiatan ekstrakurikuler diadakan setiap Senin dan Rabu dengan fokus pada Cyber Security, Web Development, dan Game Development. Selain itu, siswa juga aktif mengikuti berbagai lomba tingkat lokal hingga nasional di bidang teknologi sesuai minat dan bakat masing-masing.</p>
     </div>
   </div>
 
@@ -115,11 +100,10 @@
     <a data-aos="flip-left" href="/Contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded shadow">Hubungi Kami</a>
   </div>
 
-  <!-- Struktur Organisasi -->
   <div class="mt-16 px-4 md:px-20 text-center">
     <h2 data-aos="fade-down" class="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Struktur Organisasi Orens Solution</h2>
 
-  <!-- Ketua -->
+
   <div class="mb-10 flex justify-center">
     <div data-aos="flip-up" class="w-52 rounded shadow overflow-hidden">
       <div class="bg-orange-500 text-white py-2 font-semibold">Ketua Orens Solution</div>
@@ -127,7 +111,6 @@
     </div>
   </div>
 
-  <!-- Wakil, Sekum, SekPJBL -->
   <div data-aos="flip-up" class="mb-10 flex flex-wrap justify-center gap-6">
     <div class="w-52 rounded shadow overflow-hidden">
       <div class="bg-blue-500 text-white py-2 font-semibold">Ketua PJBL (Wakil)</div>
@@ -143,64 +126,54 @@
     </div>
   </div>
 
-  <!-- Kadiv -->
-  <div data-aos="flip-up" class="mb-8 flex flex-wrap justify-center gap-8">
-    <!-- Kadiv Cyber -->
+  <div class="mb-8 flex flex-wrap justify-center gap-8">
     <div>
-      <div class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
+      <div data-aos="flip-up" class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
         <div class="bg-orange-500 text-white py-2 font-semibold">Kadiv Cyber</div>
         <div class="bg-white text-orange-500 py-2 font-medium">Nayomi Bataritoja</div>
       </div>
-     <div class="flex justify-center gap-4">
-  <!-- Mentor Cyber 1 -->
+     <div data-aos="flip-up" class="flex justify-center gap-4">
   <div class="w-40 rounded shadow overflow-hidden">
     <div class="bg-blue-500 text-white py-2 font-semibold">Mentor</div>
     <div class="bg-white text-blue-500 py-2 font-medium">Benediktus Bintang</div>
   </div>
-  <!-- Mentor Cyber 2 -->
-  <div class="w-40 rounded shadow overflow-hidden">
+  <div data-aos="flip-up" class="w-40 rounded shadow overflow-hidden">
     <div class="bg-blue-500 text-white py-2 font-semibold">Mentor</div>
     <div class="bg-white text-blue-500 py-2 font-medium">Micheal Hotni</div>
   </div>
 </div>
 
     </div>
-
-    <!-- Kadiv Website -->
     <div>
-      <div class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
+      <div data-aos="flip-up" class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
         <div class="bg-orange-500 text-white py-2 font-semibold">Kadiv Website</div>
         <div class="bg-white text-orange-500 py-2 font-medium">Gibran Rakabuming</div>
       </div>
       <div class="flex justify-center gap-4">
-  <!-- Mentor Website 1 -->
-  <div class="w-40 rounded shadow overflow-hidden">
+  <div data-aos="flip-up" class="w-40 rounded shadow overflow-hidden">
     <div class="bg-blue-500 text-white py-2 font-semibold">Mentor</div>
     <div class="bg-white text-blue-500 py-2 font-medium">Jazman Susilo</div>
   </div>
-  <!-- Mentor Website 2 -->
-  <div class="w-40 rounded shadow overflow-hidden">
+  <div data-aos="flip-up" class="w-40 rounded shadow overflow-hidden">
     <div class="bg-blue-500 text-white py-2 font-semibold">Mentor</div>
     <div class="bg-white text-blue-500 py-2 font-medium">Ella Zenmai</div>
   </div>
 </div>
 
     </div>
-
-    <!-- Kadiv Game -->
     <div>
-      <div class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
+      <div data-aos="flip-up" class="w-52 rounded shadow overflow-hidden mb-2 mx-auto">
         <div class="bg-orange-500 text-white py-2 font-semibold">Kadiv Game</div>
         <div class="bg-white text-orange-500 py-2 font-medium">Ilham Dwi</div>
       </div>
       <div class="flex justify-center gap-4">
-  <!-- Mentor Game 1 -->
-  <div class="w-40 rounded shadow overflow-hidden">
+
+  <div data-aos="flip-up" class="w-40 rounded shadow overflow-hidden">
     <div class="bg-blue-500 text-white py-2 font-semibold">Mentor</div>
     <div class="bg-white text-blue-500 py-2 font-medium">Andreas Raja</div>
   </div>
-  <!-- Mentor Game 2 -->
-  <div class="w-40 rounded shadow overflow-hidden">
+
+  <div data-aos="flip-up" class="w-40 rounded shadow overflow-hidden">
     <div class="bg-blue-500 text-white py-2 font-semibold">Mentor</div>
     <div class="bg-white text-blue-500 py-2 font-medium">Belum tau/ada wok</div>
   </div>
@@ -254,43 +227,37 @@
 
   toggler.addEventListener('change', () => {
     if (toggler.checked) {
-      // OPEN STATE
+ 
       overlay.classList.remove('hidden');
 
-      // Animate brand
       brandOrens.classList.replace('opacity-0', 'opacity-100');
       brandOrens.classList.replace('-translate-x-4', 'translate-x-0');
       brandSolution.classList.replace('opacity-0', 'opacity-100');
       brandSolution.classList.replace('-translate-x-4', 'translate-x-0');
 
-      // Animate labels
       labels.forEach(label => {
         label.classList.replace('opacity-0', 'opacity-100');
         label.classList.replace('-translate-x-4', 'translate-x-0');
       });
 
-      // Expand sidebar on desktop
       sidebar.classList.remove('w-[85px]');
       sidebar.classList.add('w-[260px]');
       mainContent.classList.remove('md:ml-[85px]');
       mainContent.classList.add('md:ml-[260px]');
     } else {
-      // CLOSE STATE
+     
       overlay.classList.add('hidden');
 
-      // Animate brand
       brandOrens.classList.replace('opacity-100', 'opacity-0');
       brandOrens.classList.replace('translate-x-0', '-translate-x-4');
       brandSolution.classList.replace('opacity-100', 'opacity-0');
       brandSolution.classList.replace('translate-x-0', '-translate-x-4');
 
-      // Animate labels
       labels.forEach(label => {
         label.classList.replace('opacity-100', 'opacity-0');
         label.classList.replace('translate-x-0', '-translate-x-4');
       });
 
-      // Collapse sidebar on desktop
       sidebar.classList.remove('w-[260px]');
       sidebar.classList.add('w-[85px]');
       mainContent.classList.remove('md:ml-[260px]');
