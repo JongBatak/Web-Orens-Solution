@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang Kami</title>
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -18,14 +15,11 @@
         font-family: "Poppins", sans-serif;
       }
     </style>
-
-    <!-- AOS animasi -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </head>
 
   <body class="bg-white text-gray-800">
-    <!-- Navbar -->
     <nav class="bg-orange-500 text-white p-4 fixed top-0 w-full z-10 shadow-md">
       <div class="container mx-auto flex justify-between items-center">
         <a href="Home.php" class="font-bold hover:underline"
@@ -34,7 +28,6 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="pt-24 pb-2 px-6 text-center" id="tentang">
       <h2 class="text-4xl font-extrabold text-orange-500 mb-3">
         Kenapa Harus Gabung ORENS?
@@ -46,10 +39,8 @@
       </p>
     </section>
 
-    <!-- Divisi Section -->
     <section class="px-6 py-12 bg-gray-50">
       <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <!-- Divisi Cyber -->
         <div
           class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
           data-aos="fade-up"
@@ -76,7 +67,6 @@
           </button>
         </div>
 
-        <!-- Divisi Game -->
         <div
           class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
           data-aos="fade-up"
@@ -102,8 +92,6 @@
             Pelajari Selengkapnya
           </button>
         </div>
-
-        <!-- Divisi Web -->
         <div
           class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 flex flex-col items-center gap-4"
           data-aos="fade-up"
@@ -132,7 +120,6 @@
       </div>
     </section>
 
-    <!-- Detail Section (Hidden by default) -->
     <section class="px-6 py-6 bg-white space-y-4">
       <div
         id="cyber-detail"
@@ -172,17 +159,13 @@
       </div>
     </section>
 
-    <!-- JavaScript -->
     <script>
       function showDetail(id) {
-        // Sembunyikan semua detail
         document
           .querySelectorAll("#cyber-detail, #game-detail, #web-detail")
           .forEach((div) => {
             div.classList.add("hidden");
           });
-
-        // Tampilkan div yang diklik
         const el = document.getElementById(id);
         if (el) {
           el.classList.remove("hidden");
@@ -191,7 +174,6 @@
       }
     </script>
 
-    <!-- Testimoni Section -->
     <section class="bg-gray-50 py-8 px-6">
       <h3 class="text-3xl font-bold text-center text-orange-500 mb-4">
         Testimoni Siswa yang ikut Orens
@@ -204,7 +186,6 @@
       </div>
     </section>
 
-    <!-- Visi Misi -->
     <section class="px-6 py-12">
       <h3 class="text-xl font-bold text-center text-orange-500 mb-4">
         Visi dan Misi ORENS SOLUTION
@@ -221,7 +202,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="px-6 py-8 max-w-3xl mx-auto">
       <h3 class="text-xl font-bold text-orange-500 mb-4 text-center">
         Pertanyaan yang sering ditanya??
@@ -248,7 +228,6 @@
       </div>
     </section>
 
-    <!-- quiz -->
     <div
       class="mt-10 mb-12 p-8 bg-orange-100 rounded-xl shadow-md max-w-xl mx-auto"
     >
@@ -287,8 +266,7 @@
             (Capture The Flag)</label
           ><br />
           <label
-            ><input type="radio" name="q2" value="web" /> Buat tampilan web &
-            UI</label
+            ><input type="radio" name="q2" value="web" /> Buat tampilan web & UI</label
           >
         </div>
 
@@ -299,12 +277,10 @@
             visual</label
           ><br />
           <label
-            ><input type="radio" name="q3" value="cyber" /> Di balik layar &
-            command line</label
+            ><input type="radio" name="q3" value="cyber" /> Di balik layar & command line</label
           ><br />
           <label
-            ><input type="radio" name="q3" value="game" /> Ngatur logic game &
-            animasi</label
+            ><input type="radio" name="q3" value="game" /> Ngatur logic game & animasi</label
           >
         </div>
 
@@ -322,22 +298,21 @@
       ></div>
     </div>
 
-    <!-- Call to Action -->
     <section class="bg-orange-500 text-white text-center py-8 px-4">
       <p class="mt-2 text-lg">
         Klik tombol di bawah ini untuk bergabung dengan ORENS SOLUTION!
       </p>
-   
+
       <a
-  id="joinBtn"
-  href="https://docs.google.com/forms/d/e/1FAIpQLScXyQBeH2kBy9l6onggPvjRymsWxPaSDgLhdixj_p0ER77nAg/viewform"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="rounded-2xl bg-white text-orange-500 px-8 py-4 mt-6 mb-6 shadow-lg hover:bg-orange-100 transition transform active:scale-95 w-full max-w-sm mx-auto text-lg font-semibold text-center block"
->
-  🚀 Siap Belajar Lebih Dalam?
-</a>
-     
+        id="joinBtn"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScXyQBeH2kBy9l6onggPvjRymsWxPaSDgLhdixj_p0ER77nAg/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-2xl bg-white text-orange-500 px-8 py-4 mt-6 mb-6 shadow-lg hover:bg-orange-100 transition transform active:scale-95 w-full max-w-sm mx-auto text-lg font-semibold text-center block"
+      >
+        🚀 Join Orens Solution Now! 🚀
+      </a>
+
       <p class="mb-4 max-w-xl mx-auto">
         ORENS selalu terbuka untuk siswa yang mau berkembang, belajar bareng,
         dan eksplorasi dunia teknologi bareng teman-teman seru!
@@ -348,18 +323,15 @@
       </p>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center text-sm py-6 text-gray-500">
       &copy; 2025 Orens Solution. All rights reserved
     </footer>
 
-    <!-- buat animasi  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-    <!-- buat quiz -->
     <script>
       document
         .getElementById("quizForm")
@@ -373,7 +345,6 @@
             scores[value]++;
           }
 
-          // cari nilai tertinggi
           let max = 0;
           let result = "";
           for (let div in scores) {
@@ -394,7 +365,6 @@
         });
     </script>
 
-    <!-- buat hubungi -->
     <script>
       document.getElementById("joinBtn").addEventListener("click", function () {
         confetti({
@@ -405,17 +375,14 @@
       });
     </script>
 
-    <!-- buat hubungi -->
     <script>
       document.getElementById("joinBtn").addEventListener("click", function () {
-        // efek confetti confetti({ particleCount: 180, spread: 100, origin: { y:
-        0.6;
-      }); // scroll sedikit ke atas biar confetti keliatan
-      window.scrollBy({ top: -100, behavior: "smooth" }); // efek feedback
-      this.innerText = "🎉 Yuk, Ayo Mulai!";
-      setTimeout(() => {
-        this.innerText = "🚀 Join Orens Solution Now! 🚀";
-      }, 2000);
+        window.scrollBy({ top: -100, behavior: "smooth" });
+        this.innerText = "🎉 Yuk, Ayo Mulai!";
+        setTimeout(() => {
+          this.innerText = "🚀 Join Orens Solution Now! 🚀";
+        }, 2000);
+      });
     </script>
   </body>
 </html>
